@@ -89,17 +89,17 @@ header:hover .rating:nth-child(3) {
 
 .customer-review:nth-child(1) {
     align-self: flex-start;
-    transition: all .9s linear;
+    transition: transform .9s linear;
 }
 
 .customer-review:nth-child(2) {
     align-self: center;
-    transition: all .9s linear;
+    transition: transform .9s linear;
 }
 
 .customer-review:nth-child(3) {
     align-self: flex-end;
-    transition: all .9s linear;
+    transition: transform .9s linear;
 }
 
 .customers:hover > .customer-review:nth-child(1) {
