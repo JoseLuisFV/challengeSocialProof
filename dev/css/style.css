@@ -24,42 +24,62 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Spartan', sans-serif;
+    background: 
+        url('../images/bg-pattern-top-mobile.svg'),
+        url('../images/bg-pattern-bottom-mobile.svg'); 
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
 }
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 88%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 auto 36px;
     padding-top: 55px;
 }
 
 .page__title {
-    font-size: 3.0rem;
+    margin-bottom: 26px;
+    font-size: 3.2rem;
+    line-height: 3.4rem;
     font-weight: 700;
     text-align: center;
     color: var(--primary-color);
 }
 
 .page__goal {
+    margin-bottom: 34px;
+    line-height: 2.4rem;
     text-align: center;
+    color: var(--goal-color);
 }
 
+.page__rating {
+    width: 100%;
+}
 
 .rating {
+    width: 100%;
+    padding: 14px 0px;
+    margin-bottom: 13px;
     text-align: center;
     background-color: var(--bg-rating-color);
+    border-radius: 12px;
 }
 
 .rating__title {
     font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 .rating__stars {
     display: flex;
     justify-content: center;
     gap: 5px;
+    margin-bottom: 16px;
 }
 
 .rating__star {
@@ -73,22 +93,41 @@ header {
 .customers {
     display: flex;
     flex-direction: column;
-    width: 88%;
+    width: 90%;
     margin: 0 auto;
     gap: 14px;
 }
 
 .customer-review {
-    padding: 28px;
+    padding: 30px 26px;
     background-color: var(--primary-color);
     border-radius: 12px;
+    color: white;
 }
 
 .customer-review__head {
     display: flex;
     align-items: center;
+    margin-bottom: 28px;
+    gap: 24px;
 }
 
-.customer-review__head > div {
-    flex-basis: auto;
+.customer-review__head .profile__img {
+    height: 46px;
+    width: 46px; 
+    border-radius: 50%
+}
+
+.customer-review__head .profile__name {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    
+}
+
+.customer-review__head .profile__status {
+    color: var(--status-text-color);
+}
+
+.customer-review__comment {
+    line-height: 2.4rem;
 }
