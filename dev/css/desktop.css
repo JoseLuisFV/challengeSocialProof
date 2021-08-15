@@ -1,0 +1,115 @@
+body {
+    background: 
+        url('../images/bg-pattern-top-desktop.svg'),
+        url('../images/bg-pattern-bottom-desktop.svg');
+    
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+}
+
+body > div {
+    max-width: 1200px;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 85px;
+    margin-bottom: 20px
+}
+
+header > div {
+    width: 420px
+}
+
+
+
+.page__title {
+    font-size: 3.8rem;
+    line-height: 4.0rem;
+    margin-bottom: 10px;
+    text-align: left;
+    transition: transform 500ms ease-in-out;
+}
+
+header:hover .page__title {
+    transform: scale(1.2);
+}
+
+.page__goal {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.page__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.rating:nth-child(1) {
+    align-self: flex-start;
+    transition: transform 0.6s ease-in;
+}
+
+.rating:nth-child(2) {
+    align-self: center;
+}
+
+.rating:nth-child(3) {
+    align-self: flex-end;
+    transition: transform 0.52s ease-out 0.6s;
+}
+
+header:hover .rating:nth-child(1) {
+    transform: translateX(120px)
+}
+
+header:hover .rating:nth-child(3) {
+    transform: translateX(-120px)
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 450px;
+}
+
+.rating__stars {
+    margin: 0;
+}
+
+.customers {
+    flex-direction: row;
+    height: 320px;
+}
+
+.customer-review:nth-child(1) {
+    align-self: flex-start;
+    transition: all .9s linear;
+}
+
+.customer-review:nth-child(2) {
+    align-self: center;
+    transition: all .9s linear;
+}
+
+.customer-review:nth-child(3) {
+    align-self: flex-end;
+    transition: all .9s linear;
+}
+
+.customers:hover > .customer-review:nth-child(1) {
+    transform: translateY(33px) scale(0.9);
+}
+
+.customers:hover > .customer-review:nth-child(2) {
+    transform: scale(1.1);
+}
+
+.customers:hover > .customer-review:nth-child(3) {
+    transform: translateY(-33px) scale(0.9);
+}
